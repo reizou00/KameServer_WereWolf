@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "hurt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "player",
+          "slots":{
+            "weapon.*": {
+              "components": {
+                "custom_data": {"IID":"WereWolf_Tool"}
+              }
+            }
+          },
+          "targeted_entity": {
+            "type": "player"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "kame_werewolf:used"
+  }
+}
