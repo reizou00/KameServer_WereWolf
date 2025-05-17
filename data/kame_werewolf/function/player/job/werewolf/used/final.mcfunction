@@ -36,7 +36,7 @@ function:"set_components",\
             {\
             type:"attack_damage",\
             id:"minecraft:werewolf_tool",\
-            amount:10000,\
+            amount:10,\
             operation:"add_value"\
             }\
         ]\
