@@ -1,20 +1,21 @@
 {
   "criteria": {
-    "hurt": {
+    "hurt_with_tool": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
-          "type": "player",
-          "slots":{
-            "weapon.*": {
-              "components": {
+          "type": "minecraft:player"
+        },
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "components":
+              {
                 "custom_data": {"IID":"WereWolf_Tool"}
               }
             }
           },
-          "targeted_entity": {
-            "type": "player"
-          }
+          "nbt": "{Tags:[\"KameServer_WereWolf.Job_WereWolf\"]}"
         }
       }
     }
