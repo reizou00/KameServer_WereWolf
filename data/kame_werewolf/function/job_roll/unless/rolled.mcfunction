@@ -12,3 +12,8 @@ random value 1..2
 execute \
 unless score $WereWolf KameSrever_WereWolf.Roll matches 2 run \
 function kame_werewolf:job_roll/unless/werewolf
+
+# 市民の数を...
+execute \
+if score @s KameSrever_WereWolf.Roll matches 1 run \
+scoreboard players add $Citizen KameSrever_WereWolf.Roll 1
