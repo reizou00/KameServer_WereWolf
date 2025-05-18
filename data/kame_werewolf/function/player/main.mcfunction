@@ -2,8 +2,6 @@
 #> ライブラリの呼び出し
     # アイテムストレージ検知ライブラリ
     function sid:player/main
-    # アイテム使用検知ライブラリ
-    function reizo_itemused:player/main
 
 #> ジョブごとの動作
     # 人狼
@@ -15,6 +13,10 @@
     at @s[tag=KameServer_WereWolf.Job_Citizen] run \
     function kame_werewolf:player/job/citizen/main
 
+#> debug用execute
+execute \
+at @s[tag=reizoDebugTag.Admin] run \
+function debug:player/main
 
 # !:絶対にresetは一番下に置くこと
 #> data君たちお疲れ様!また頑張ってくれ!
