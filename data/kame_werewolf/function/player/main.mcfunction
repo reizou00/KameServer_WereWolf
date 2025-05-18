@@ -1,10 +1,19 @@
 
 #> ライブラリの呼び出し
-function sid:player/main
+    # アイテムストレージ検知ライブラリ
+    function sid:player/main
+    # アイテム使用検知ライブラリ
+    function reizo_itemused:player/main
 
 #> ジョブごとの動作
     # 人狼
-    execute at @s[tag=KameServer_WereWolf.Job_WereWolf] run function kame_werewolf:player/job/werewolf/main
+    execute \
+    at @s[tag=KameServer_WereWolf.Job_WereWolf] run \
+    function kame_werewolf:player/job/werewolf/main
+    # 市民
+    execute \
+    at @s[tag=KameServer_WereWolf.Job_Citizen] run \
+    function kame_werewolf:player/job/citizen/main
 
 
 # !:絶対にresetは一番下に置くこと
