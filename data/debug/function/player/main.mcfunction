@@ -1,7 +1,7 @@
 
 #> デバッガーは前役職を持っている。
     # 人狼
-    tag @s add KameServer_WereWolf.Job_WereWolf
+    
     # アイテム検知
         # お前...人ぶっ殺しソード持ってるな！
         execute \
@@ -20,7 +20,7 @@
             {\
             Hand:\
                 {\
-                Both:"Debug.Rool_Tool"\
+                Both:"Debug.Rooll_Tool"\
                 }\
             } run \
             function debug:player/item/roll_tool/main
@@ -30,10 +30,9 @@
             {\
             Hand:\
                 {\
-                Both:"Debug.Rool_Tool"\
+                Both:"Debug.Rooll_Tool"\
                 }\
             } run \
             tag @a remove reizoDebugTag.Approve_Roll
 
     # 市民
-    tag @s add KameServer_WereWolf.Job_Citizen

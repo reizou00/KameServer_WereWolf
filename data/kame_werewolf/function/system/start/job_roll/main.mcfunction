@@ -7,26 +7,12 @@ function kame_werewolf:system/start/job_roll/unless_rolled with storage kamesere
 # ロール済み、ゲーム終了後に外すこと。
 tag @s add KameServer_WereWolf.Rolled
 
-#> Tag付け
+#> 役職の定義
     # 人狼
     execute \
     as @a[scores={KameSrever_WereWolf.Roll=2}] at @s run \
-    tag @s add KameServer_WereWolf.Job_WereWolf
+    function kame_werewolf:system/start/job_roll/set_job/werewolf
     # 市民
     execute \
-    as @a[scores={KameSrever_WereWolf.Roll=0..1}] at @s run \
-    tag @s add KameServer_WereWolf.Job_Citizen
-
-#> 人狼と市民の数を計算
-    # 人狼
-    execute \
-    unless score @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf matches 2 \
-    store result score $WereWolf KameSrever_WereWolf.Roll \
-    at @s[tag=KameServer_WereWolf.Job_WereWolf] run \
-    scoreboard players set @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf 1
-    # 市民
-    execute \
-    unless score @s KameSrever_WereWolf.Roll_Onlyonce_Citizen matches 2 \
-    store result score $Citizen KameSrever_WereWolf.Roll \
-    at @s[tag=KameServer_WereWolf.Job_Citizen] run \
-    scoreboard players set @s KameSrever_WereWolf.Roll_Onlyonce_Citizen 1
+    at @s[scores={KameSrever_WereWolf.Roll=0..1}] run \
+    function kame_werewolf:system/start/job_roll/set_job/citizen

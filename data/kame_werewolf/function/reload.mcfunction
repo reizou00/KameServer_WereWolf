@@ -14,4 +14,9 @@ setting:\
     }\
 }
 
+#> ライブラリの呼び出し
+    # アイテム使用検知ライブラリ
+    function reizo_itemused:reload
+
+
 tellraw @a "DataPack導入完了。"

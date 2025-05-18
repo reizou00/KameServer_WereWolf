@@ -2,6 +2,8 @@
 #> ライブラリの呼び出し
     # アイテムストレージ検知ライブラリ
     function sid:player/main
+    # アイテムの使用検知ライブラリ
+    function reizo_itemused:player/main
 
 #> ジョブごとの動作
     # 人狼
