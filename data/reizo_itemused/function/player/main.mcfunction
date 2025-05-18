@@ -1,6 +1,6 @@
 
 # 使ってる？使ってない？どっちなんだい！
-execute if score @s[scores={reizoTools.using=1..}] reizoTools.usend matches 0 run function reizo_itemused:relase_using
+execute if score @s[scores={reizo_itemused.using=1..}] reizo_itemused.usend matches 0 run function reizo_itemused:relase_using
 
 # クリックを離したな！
-scoreboard players set @s reizoTools.usend 0
+scoreboard players set @s reizo_itemused.usend 0
