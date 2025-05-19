@@ -16,3 +16,13 @@ tag @s add KameServer_WereWolf.Rolled
     execute \
     at @s[scores={KameSrever_WereWolf.Roll=0..1}] run \
     function kame_werewolf:system/start/job_roll/set_job/citizen
+
+#> 役職の人数を計算
+    # 人狼
+    execute \
+    store result score $WereWolf KameSrever_WereWolf.Roll \
+    if entity @a[tag=KameServer_WereWolf.Job_WereWolf]
+    # 市民
+    execute \
+    store result score $Citizen KameSrever_WereWolf.Roll \
+    if entity @a[tag=KameServer_WereWolf.Job_Citizen]
