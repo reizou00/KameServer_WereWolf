@@ -20,12 +20,18 @@ tag @s remove KameServer_WereWolf.Job_WereWolf
     {\
     "text": "\n[リセットしました]\n",\
     "color": "red",\
+    "clickEvent": \
+    {\
+    "action": "run_command",\
+    "value": "/function kame_werewolf:system/end/main"\
+    },\
     "hoverEvent": \
         {\
         "action": "show_text",\
         "contents": "\
                     ロールを再度使用できます。\n\
-                    このリセットの適応はあなただけです。\
+                    このリセットの適応はあなただけです。\n\
+                    [クリックすると全員再度利用可能。]\
                     "\
         }\
     }
