@@ -15,3 +15,17 @@ tag @s remove KameServer_WereWolf.Job_WereWolf
     # particleのや～つ。
     particle minecraft:dust{color:[0.5,0.5,0.5],scale:1} ~ ~1 ~ 0.3 0.5 0.3 0 10 normal @s
     particle minecraft:entity_effect{color:[0.5, 0.5, 0.5, 1.0]} ~ ~1 ~ 0.3 0.5 0.3 0 10 normal @s
+    # 言葉で僕に教えてくれ！
+    tellraw @s \
+    {\
+    "text": "\n[リセットしました]\n",\
+    "color": "red",\
+    "hoverEvent": \
+        {\
+        "action": "show_text",\
+        "contents": "\
+                    ロールを再度使用できます。\n\
+                    このリセットの適応はあなただけです。\
+                    "\
+        }\
+    }
