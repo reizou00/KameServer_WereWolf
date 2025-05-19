@@ -21,6 +21,6 @@
     }
   },
   "rewards": {
-    "function": "kame_werewolf:used"
+    "function": "kame_werewolf:item/used/job/werewolf/werewolf_tool"
   }
 }
