@@ -23,9 +23,8 @@
     at @s[tag=reizoDebugTag.Admin] run \
     function debug:player/main
     # ロールルールの対象の人。
-    execute as @a[tag=reizoDebugTag.Approve_Roll,tag=!KameServer_WereWolf.Rolled] at @s run \
+    execute at @s[tag=reizoDebugTag.Approve_Roll,tag=!KameServer_WereWolf.Rolled] run \
     function debug:player/approve_roll/main
-
 
 # !:絶対にresetは一番下に置くこと
 #> data君たちお疲れ様!また頑張ってくれ!
