@@ -11,7 +11,7 @@
             Both:"WereWolf_Tool"\
             }\
         } run \
-        function debug:item/werewolf_tool/main
+        function debug:item/category/job/werewolf/werewolf_tool/main
         
         # お前は、デバッグ用のアイテムの...ロールツールだな。
             # 持ってる
@@ -23,7 +23,7 @@
                 Both:"Debug.Rooll_Tool"\
                 }\
             } run \
-            function debug:item/roll_tool/main
+            function debug:item/category/debug/roll_tool/main
             # 持ってない
             execute \
             unless data storage reizo_sid:item \
