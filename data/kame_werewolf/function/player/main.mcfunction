@@ -15,13 +15,15 @@
     at @s[tag=KameServer_WereWolf.Job_Citizen] run \
     function kame_werewolf:player/job/citizen/main
 
+
+
 #> debug用execute
     # admin用
     execute \
     at @s[tag=reizoDebugTag.Admin] run \
     function debug:player/main
     # ロールルールの対象の人。
-    execute as @a[tag=reizoDebugTag.Approve_Roll] at @s run \
+    execute as @a[tag=reizoDebugTag.Approve_Roll,tag=!KameServer_WereWolf.Rolled] at @s run \
     function debug:player/approve_roll/main
 
 
