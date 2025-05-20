@@ -1,3 +1,7 @@
+# スターターの人数を計算
+execute \
+store result score $Starter KameSrever_WereWolf.Roll \
+if entity @e[tag=KameServer_WereWolf.Starter]
 
 #> ジョブの数を反映
     # 市民の人数を計算
