@@ -7,7 +7,7 @@ execute \
 store result score $WereWolf KameSrever_WereWolf.Roll \
 if entity @a[tag=KameServer_WereWolf.Job_WereWolf]
 
-# 人狼が二人もいないのでエラー処理。
+# 人狼が設定数もいないのでエラー処理。
 $execute \
 unless score $WereWolf KameSrever_WereWolf.Roll matches $(now) run \
 function kame_werewolf:system/start/job_roll/error
