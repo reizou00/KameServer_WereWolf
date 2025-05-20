@@ -8,7 +8,7 @@ function kame_werewolf:system/start/job_roll/unless_rolled with storage kamesere
 tag @s add KameServer_WereWolf.Rolled
 
 #> 役職の定義
-    # 人狼
+    # 人狼最初に人狼を置いとかないとエラー処理が出来ない。
     execute \
     as @a[scores={KameSrever_WereWolf.Roll=2}] at @s run \
     function kame_werewolf:system/start/job_roll/set_job/werewolf
@@ -19,10 +19,10 @@ tag @s add KameServer_WereWolf.Rolled
 
 #> 役職の人数を計算
     # 人狼
-    execute \
-    store result score $WereWolf KameSrever_WereWolf.Roll \
-    if entity @a[tag=KameServer_WereWolf.Job_WereWolf]
+    # execute \
+    # store result score $WereWolf KameSrever_WereWolf.Roll \
+    # if entity @a[tag=KameServer_WereWolf.Job_WereWolf]
     # 市民
-    execute \
-    store result score $Citizen KameSrever_WereWolf.Roll \
-    if entity @a[tag=KameServer_WereWolf.Job_Citizen]
+    # execute \
+    # store result score $Citizen KameSrever_WereWolf.Roll \
+    # if entity @a[tag=KameServer_WereWolf.Job_Citizen]
