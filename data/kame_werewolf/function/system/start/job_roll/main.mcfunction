@@ -1,4 +1,22 @@
 
+# reizo:内心笑ってたのか。\
+        (今の僕のitigに対する言葉なんで気にすんな、次のバージョンにはこのコメント消しとくよ。)
+
+#> init処理
+    # trueではないことを願う。
+    execute \
+    unless data storage kameserever_werewolf:init \
+    {\
+    job_roll:true\
+    } run \
+    function kame_werewolf:system/start/job_roll/init
+    # もう一度実行しないように、trueにする。
+    data merge storage kameserever_werewolf:init \
+    {\
+    job_roll:true\
+    }
+
+
 # まだロールしてない人対象
 execute \
 at @s[tag=!KameServer_WereWolf.Rolled] run \
