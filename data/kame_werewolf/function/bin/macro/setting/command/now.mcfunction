@@ -1,7 +1,7 @@
 
 # now == number_of_werewolf
 $execute \
-if data storage kameserever_werewolf:setting \
+if data storage kamewerewolf:setting \
 {\
 setting:\
     {\
@@ -24,7 +24,7 @@ tellraw @s \
     "clickEvent": \
         {\
         "action": "run_command",\
-        "value": "/data merge storage kameserever_werewolf:setting \
+        "value": "/data merge storage kamewerewolf:setting \
             {\
             setting:\
                 {\

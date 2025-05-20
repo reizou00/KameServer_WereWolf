@@ -12,4 +12,4 @@
     scoreboard players reset @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf
 
 #> storageリセット
-data remove storage kameserever_werewolf:init job_roll
+data remove storage kamewerewolf:init job_roll
