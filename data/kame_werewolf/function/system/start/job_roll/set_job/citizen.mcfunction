@@ -2,11 +2,6 @@
 # Tagの付与
 tag @s add KameServer_WereWolf.Job_Citizen
 
-# 市民の人数を計算
-execute \
-store result score $Citizen KameSrever_WereWolf.Roll \
-if entity @a[tag=KameServer_WereWolf.Job_Citizen]
-
 # まだset_upされていないときにOnlyonceを1にセット、これがset_upにつながるため数を変えてはいけない。
 execute \
 unless score @s KameSrever_WereWolf.Roll_Onlyonce_Citizen matches 2 run \
