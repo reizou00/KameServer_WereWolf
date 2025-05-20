@@ -2,7 +2,7 @@
 #> 設定適用
     # 人狼一人
     execute \
-    if data storage kamewerewolf:setting \
+    if data storage kame_werewolf:setting \
     {\
     setting:\
         {\
@@ -12,7 +12,7 @@
     function kame_werewolf:setting/now/1/main
     # 人狼二人
     execute \
-    if data storage kamewerewolf:setting \
+    if data storage kame_werewolf:setting \
     {\
     setting:\
         {\

@@ -1,5 +1,4 @@
 
-
 #> 一回だけ実行したいよね。
 execute as @a\
 [\
@@ -13,7 +12,7 @@ function kame_werewolf:player/job/werewolf/set_up
 
 # 使ったな！
 execute at @s[tag=KameServer_WereWolf.Job_WereWolf_Used] run \
-function kame_werewolf:item/job/werewolf/werewolf_tool/used/main
+function kame_werewolf:item/job/werewolf/werewolf_tool/used/main with storage kame_werewolf:macros
 
 # 戻しとこうか。
 execute \

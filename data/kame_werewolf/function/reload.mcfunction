@@ -6,7 +6,7 @@ scoreboard objectives add KameSrever_WereWolf.Roll_Onlyonce_WereWolf dummy
 scoreboard objectives add KameSrever_WereWolf.Roll_Onlyonce_Citizen dummy
 
 # 初期設定は人狼二人
-data merge storage kamewerewolf:setting \
+data merge storage kame_werewolf:setting \
 {\
 setting:\
     {\

@@ -5,16 +5,6 @@
     # アイテムの使用検知ライブラリ
     function reizo_itemused:player/main
 
-#> ジョブの数を反映
-    # 市民の人数を計算
-    execute \
-    store result score $Citizen KameSrever_WereWolf.Roll \
-    if entity @s[tag=KameServer_WereWolf.Job_Citizen]
-    # 人狼の数を計算
-    execute \
-    store result score $WereWolf KameSrever_WereWolf.Roll \
-    if entity @s[tag=KameServer_WereWolf.Job_WereWolf]
-
 #> ジョブごとの動作
     # 人狼
     execute \
